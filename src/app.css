@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+	@apply font-poppin bg-back;
+	overflow: hidden;
+}
+
+h1 {
+	@apply text-[10rem] tracking-tighter font-semibold w-min select-none drop-shadow-2xl;
+}
+
+h2 {
+	@apply text-5xl opacity-80 tracking-wide font-semibold pt-4 select-none drop-shadow-xl;
+}
+
+h3 {
+	@apply text-2xl opacity-60 tracking-wider font-semibold pt-36 select-none drop-shadow-lg;
+}
+
+p {
+	@apply text-4xl tracking-wider select-none drop-shadow-lg;
+}
+
+li {
+	@apply text-4xl tracking-wider select-none drop-shadow-lg;
+}
