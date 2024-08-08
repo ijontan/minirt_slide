@@ -41,7 +41,7 @@
 	>
 		A simple 3D Graphics Program
 	</h2>
-	<h3 class="{animate3 ? 'duration-1000' : 'opacity-0 duration-200'} transition-all">
+	<h3 class="{animate3 ? 'duration-[2500ms]' : 'opacity-0 duration-200'} transition-all">
 		By: Ijon & Rong Jie
 	</h3>
 </SlideFirst>
