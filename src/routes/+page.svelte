@@ -2,8 +2,9 @@
 	import Slide1 from './Slide1.svelte';
 	import Slide2 from './Slide2.svelte';
 	import Slide3 from './Slide3.svelte';
+	import Slide4 from './Slide4.svelte';
 	const firstPage = 0;
-	const lastPage = 3;
+	const lastPage = 4;
 	let page = firstPage;
 
 	function prevPage() {
@@ -34,6 +35,8 @@
 	<Slide2 />
 {:else if page == 3}
 	<Slide3 />
+{:else if page == 4}
+	<Slide4 />
 {/if}
 
 <!-- <div class="buttons"> -->
