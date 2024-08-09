@@ -10,8 +10,8 @@
 
 <img
 	class="{animate1
-		? 'duration-700 opacity-80'
-		: 'opacity-0 duration-100'} h-full flex-1 min-w-0 transition-all border-white border-2 rounded-xl hover:scale-150 hover:z-10 hover:opacity-100"
+		? 'duration-700 opacity-80 hover:opacity-100'
+		: 'opacity-0 duration-100'} h-full flex-1 min-w-0 transition-all border-white border-2 rounded-xl"
 	{src}
 	{alt}
 />
