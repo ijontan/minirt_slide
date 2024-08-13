@@ -3,8 +3,10 @@
 	import Slide2 from './Slide2.svelte';
 	import Slide3 from './Slide3.svelte';
 	import Slide4 from './Slide4.svelte';
+	import Slide5 from './Slide5.svelte';
+
 	const firstPage = 0;
-	const lastPage = 4;
+	const lastPage = 5;
 	let page = firstPage;
 
 	function prevPage() {
@@ -19,6 +21,10 @@
 	function onKeyDown(e: KeyboardEvent) {
 		if (e.key == 'ArrowRight') nextPage();
 		else if (e.key == 'ArrowLeft') prevPage();
+		else if (e.key == 'l') nextPage();
+		else if (e.key == 'h') prevPage();
+		else if (e.key == 'j') nextPage();
+		else if (e.key == 'k') prevPage();
 	}
 </script>
 
@@ -37,9 +43,6 @@
 	<Slide3 />
 {:else if page == 4}
 	<Slide4 />
+{:else if page == 5}
+	<Slide5 />
 {/if}
-
-<!-- <div class="buttons"> -->
-<!-- 	<button on:click={prevPage}>{'<'}</button> -->
-<!-- 	<button on:click={nextPage}>{'>'}</button> -->
-<!-- </div> -->

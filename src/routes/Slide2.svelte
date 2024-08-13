@@ -27,7 +27,7 @@
 		<li>Rendering a 3D objects and scenes.</li>
 		<li>Manipulating the objects in realtime</li>
 		<li>Moving around the scene</li>
-		<li>No external library allow other than minilibx.</li>
+		<li>No external libraries allow other than minilibx.</li>
 	</ul>
 	<AnimationBlock positionClass="top-[-500px] left-[-440px]" size={1000} speed={36} clockwise />
 	<AnimationBlock positionClass="bottom-[-300px] left-[50px]" size={600} speed={24} />
