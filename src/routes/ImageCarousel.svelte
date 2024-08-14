@@ -5,11 +5,11 @@
 	export let time: number = 42;
 </script>
 
-<div class="h-full w-full relative">
+<div class="h-full w-full relative group">
 	<div
 		class="{reversed
 			? 'carocel-rev'
-			: 'carocel'} absolute left-0 top-0 h-full w-full translate -translate-x-[calc(100%+12px)] gap-3 flex flex-row select-none"
+			: 'carocel'} group-hover:pause absolute left-0 top-0 h-full w-full translate -translate-x-[calc(100%+12px)] gap-3 flex flex-row select-none"
 		style="--time: {time}s;"
 	>
 		{#each images as src}
@@ -19,7 +19,7 @@
 	<div
 		class="{reversed
 			? 'carocel-rev'
-			: 'carocel'} absolute left-0 top-0 h-full w-full flex flex-row gap-3 select-none"
+			: 'carocel'} group-hover:pause absolute left-0 top-0 h-full w-full flex flex-row gap-3 select-none"
 		style="--time: {time}s;"
 	>
 		{#each images as src}
@@ -29,7 +29,7 @@
 	<div
 		class="{reversed
 			? 'carocel-rev'
-			: 'carocel'} absolute left-0 top-0 h-full w-full translate-x-[calc(100%+12px)] gap-3 flex flex-row select-none"
+			: 'carocel'} group-hover:pause absolute left-0 top-0 h-full w-full translate-x-[calc(100%+12px)] gap-3 flex flex-row select-none"
 		style="--time: {time}s;"
 	>
 		{#each images as src}

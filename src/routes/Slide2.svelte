@@ -1,6 +1,7 @@
 <script lang="ts">
 	import AnimationBlock from './AnimationBlock.svelte';
 	import SlideCard from './SlideCard.svelte';
+	import ImageCarousel from './ImageCarousel.svelte';
 	let animate1 = false;
 	let animate2 = false;
 	setTimeout(() => {
@@ -22,13 +23,16 @@
 	<ul
 		class="{animate2
 			? 'duration-700'
-			: ' duration-200 opacity-0 translate-y-11'} list-disc list-inside transition-all flex flex-col gap-8"
+			: ' duration-200 opacity-0 translate-y-11'} list-disc list-inside transition-all flex flex-col gap-8
+			mb-20
+		"
 	>
 		<li>Rendering a 3D objects and scenes.</li>
 		<li>Manipulating the objects in realtime</li>
 		<li>Moving around the scene</li>
 		<li>No external libraries allow other than minilibx.</li>
 	</ul>
+	<ImageCarousel time={60} images={[]} />
 	<AnimationBlock positionClass="top-[-500px] left-[-440px]" size={1000} speed={36} clockwise />
 	<AnimationBlock positionClass="bottom-[-300px] left-[50px]" size={600} speed={24} />
 	<AnimationBlock positionClass="top-[-100px] right-[-120px]" size={500} speed={30} />

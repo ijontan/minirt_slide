@@ -4,6 +4,13 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@layer utilities {
+	.pause {
+		animation-play-state: paused;
+	}
+}
+
 html {
 	@apply font-poppin bg-back;
 	overflow: hidden;
