@@ -4,9 +4,10 @@
 	import Slide3 from './Slide3.svelte';
 	import Slide4 from './Slide4.svelte';
 	import Slide5 from './Slide5.svelte';
+	import Slide6 from './Slide6.svelte';
 
 	const firstPage = 0;
-	const lastPage = 5;
+	const lastPage = 6;
 	let page = firstPage;
 
 	function prevPage() {
@@ -42,7 +43,9 @@
 {:else if page == 3}
 	<Slide3 />
 {:else if page == 4}
-	<Slide4 />
+	<Slide6 />
 {:else if page == 5}
+	<Slide4 />
+{:else if page == 6}
 	<Slide5 />
 {/if}

@@ -5,7 +5,7 @@
 
 <div class="app">
 	<slot />
-	<img class=" h-14 fixed right-20 bottom-20" src={logo42} alt="42 logo" />
+	<img class=" h-14 fixed right-20 bottom-20 pointer-events-none" src={logo42} alt="42 logo" />
 </div>
 
 <style lang="postcss">
